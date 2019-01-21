@@ -71,6 +71,7 @@ class ReporteSolicitadoController extends Controller
             }
         $mobj_data= $this->ContratoRepo->flst_Listar($mint_entidadId);
 
+        
         return Excel::create(
             'Reporte Excel', function($excel) use($mobj_data)
         {
